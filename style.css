@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+:root {
+--primary-color: #aa2081;
+--overlay-color: #00b2e9;
+--font-color-default: whitesmoke;
+--first-color: rgb(6, 89, 0);
+--second-color: rgb(181, 65, 113);
+--third-color: rgb(0, 21, 160);
+--white-color: #fff;
+--white-transparent-light: rgba(255, 255, 255, 0.1);
+--white-transparent-heavy: rgba(255, 255, 255, 0.5);
+--black-color: #000;
+--black-transparent-light: rgba(0, 0, 0, 0.15);
+--black-transparent-heavy: rgba(0, 0, 0, 0.5);
+--grey-color: grey;
+--blackish-color: rgb(40, 41, 43);
+--menu-speed: 1.75s;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: 'Oswald', sans-serif;
+}
+
+body { 
+    background: linear-gradient(45deg, var(--grey-color), var(--white-color), var(--grey-color));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    min-width: 100vw;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    background-color: var(--blackish-color);
+}
+.container h3 {
+    font-size: 1.2em;
+    font-weight: normal;
+    letter-spacing: 0.08em;
+    text-align: center;
+    color: var(--white-color);
+}
+
+.container .passWordContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.container input {
+    height: 100%;
+    width: 250px;
+    padding: 10px;
+    margin: 20px 10px 0px;
+    font-size: 0.8em;
+    letter-spacing: 0.05em;
+    color: var(--white-color);
+    background: var(--white-transparent-light);
+    border-radius: 5px;
+    border: 2px solid var(--white-transparent-heavy);
+    pointer-events: none;
+    user-select: none;
+    outline: none;
+}
+
+.container input::placeholder {
+    font-size: 1em;
+    color: var(--white-transparent-heavy);
+}
+
+.container span {
+    position: absolute;
+    right: 20px;
+    bottom: 6px;
+    font-size: 1.4em;
+    color: var(--white-transparent-heavy);
+    cursor: pointer;
+    display: none;
+}
+
+.container .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.container button {
+    font-size: 0.75em;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--white-transparent-heavy);
+    width: 250px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--white-transparent-heavy);
+    background: var(--black-transparent-heavy);
+    cursor: pointer;
+}
+
+.container button:hover {
+    background: var(--black-transparent-light);
+}
+
+
+
+
+
+
+
+    /*
+        box-shadow: 0px 20px 40px var(--black-transparent-light),
+                    0px 15px 10px var(--black-transparent-light);
+
+
+        box-shadow: 5px 5px 10px var(--black-transparent-light),
+                    -5px -5px 10px var(--black-transparent-light);
+
+        box-shadow: -3px -3px 15px 2px var(--black-transparent-light),
+                    2px 2px 15px 2px var(--black-transparent-light);
+ 
+        box-shadow: inset 10px 10px 15px rgba(255, 255, 255, 0.3),
+                    inset -10px -10px 15px rgba(255, 255, 255, 0.3);
+    */
