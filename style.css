@@ -1,14 +1,14 @@
 @charset "utf-8";
 
 :root {
---primary-color: #aa2081;
---overlay-color: #00b2e9;
+--primary-color: #b2007d;
+--overlay-color: #0081a9;
 --font-color-default: whitesmoke;
 --first-color: rgb(6, 89, 0);
 --second-color: rgb(181, 65, 113);
 --third-color: rgb(0, 21, 160);
 --white-color: #fff;
---white-transparent-light: rgba(255, 255, 255, 0.18);
+--white-transparent-light: rgba(255, 255, 255, 0.2);
 --white-transparent-heavy: rgba(255, 255, 255, 0.5);
 --black-color: #000;
 --black-transparent-light: rgba(0, 0, 0, 0.15);
@@ -42,6 +42,8 @@ body {
     flex-direction: column;
     padding: 30px;
     background-color: var(--white-transparent-light);
+    box-shadow: 5px 5px 35px 0px var(--black-transparent-heavy),
+                -5px -5px 35px 0px var(--black-transparent-heavy);
     backdrop-filter: Blur(15px);
 }
 .container h3 {
@@ -105,13 +107,14 @@ body {
     text-transform: uppercase;
     text-align: center;
     color: var(--white-color);
-    width: 250px;
+    width: 200px;
     padding: 10px;
     margin: 10px;
     border-radius: 5px;
     border: 1px solid var(--white-color);
-    background: var(--blackish-color);
+    background: var(--overlay-color);
     cursor: pointer;
+
 }
 
 .container button:hover {
